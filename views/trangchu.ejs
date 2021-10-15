@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chat - Lai Hay Like</title>
+        <script src="jquery.js"></script>
+        <script src="socket.io/socket.io.js"></script>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="xuly.js"></script>
+    </head>
+    <body>
+        <div id="loginform">
+            <form>
+                <p>Please enter your name to continue:</p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" />
+                <input type="button" name="enter" id="enter" value="Enter" />
+            </form>
+        </div>
+        <div id="wrapper">
+            <div id="menu">
+                  <p class="welcome">Welcome, <b id="currentUser"></b></p>
+                  <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+                  <div style="clear:both"></div>
+              </div>
+            <div class="row">
+                <div class="col-3">
+                    <div id="boxTitle">Users Online</div>
+                    <div id="boxContent"></div>
+                </div>
+                <div class="col-7">
+                    <div id="noidung">
+                        <div id="chatbox"></div>
+                        <div id="thongbao"></div>
+                    </div>
+                    
+                    <form>
+                        <input type="text" id="usermsg" size="63" />
+                        <input type="button"  id="submitmsg" value="Send" />
+                        <input type="file" id="imagefile" />
+                    </form>
+                </div>
+            </div>  
+          </div>
+    </body>
+</html>
